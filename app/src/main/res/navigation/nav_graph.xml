@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/clientListFragment">
+
+    <fragment
+        android:id="@+id/clientListFragment"
+        android:name="com.example.clientsmvvm.fragments.ClientListFragment"
+        android:label="fragment_client_list"
+        tools:layout="@layout/fragment_client_list" >
+        <action
+            android:id="@+id/action_clientListFragment_to_createClientFragment"
+            app:destination="@id/createClientFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createClientFragment"
+        android:name="com.example.clientsmvvm.fragments.CreateClientFragment"
+        android:label="fragment_create_client"
+        tools:layout="@layout/fragment_create_client" />
+</navigation>
